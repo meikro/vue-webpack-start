@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "webpack-dev-server --port 3001 --inline --progress --colors --history-api-fallback --content-base",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -17,8 +18,9 @@
   },
   "homepage": "https://github.com/meikro/vue-webpack-start#readme",
   "dependencies": {
-    "vue": "^2.1.3",
-    "vue-router": "^2.1.0"
+    "babel-cli": "^6.18.0",
+    "babel-runtime": "^6.0.0",
+    "vue": "^1.0.0"
   },
   "devDependencies": {
     "babel-core": "^6.0.0",
@@ -30,9 +32,15 @@
     "css-loader": "^0.23.1",
     "extract-text-webpack-plugin": "^1.0.1",
     "file-loader": "^0.8.4",
+    "jquery": "^3.1.1",
     "json-loader": "^0.5.4",
     "style-loader": "^0.13.1",
     "url-loader": "^0.5.7",
+    "vue-hot-reload-api": "^1.2.0",
+    "vue-html-loader": "^1.0.0",
+    "vue-loader": "^8.2.1",
+    "vue-router": "^0.7.13",
+    "vue-style-loader": "^1.0.0",
     "webpack": "^1.12.2",
     "webpack-dev-server": "^1.12.0"
   }

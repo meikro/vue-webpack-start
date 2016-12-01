@@ -1,18 +1,11 @@
- import Home from './components/Home.vue'
- import About from './components/About.vue'
+import Home from './components/Home.vue'
+import About from './components/About.vue'
 
-export default [
-    {
-        path: '/',
-        name: 'home',
+export default {
+    'home': {
         component: Home
     },
-    // {
-    //     'home': {
-    //         component: Home
-    //     },
-    //     'about': {
-    //         component: About
-    //     }
-    // }
-]
+    'about': {
+        component: About
+    }
+}
