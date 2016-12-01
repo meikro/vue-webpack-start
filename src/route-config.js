@@ -1,9 +1,9 @@
-import Home from './components/Home.vue'
+import Ajax from './components/Ajax.vue'
 import About from './components/About.vue'
 
 export default {
-    'home': {
-        component: Home
+    'Ajax': {
+        component: Ajax
     },
     'about': {
         component: About
