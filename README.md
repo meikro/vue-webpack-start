@@ -12,7 +12,7 @@
 
 > 5.使用.vue文件进行组件化的开发
 
-> PS：本文node v6.2.2 npm v3.9.5 vue v2.1.0 vue-router v2.0.3 vuex v2.0.0 
+> PS：本文node v6.2.2 npm v3.9.5 vue v2.1.0 vue-router v2.0.3 vuex v2.0.0
 
 > 若你要看vue1.0构建单页应用最佳实战 请 前往 master 分支  [vue1.0构建单页应用最佳实战](https://github.com/MeCKodo/vue-tutorial/tree/master)
 
@@ -35,7 +35,7 @@
 
 首先，安装vue-cli。(确保你有node和npm)
 
-`npm i -g vue-cli` 
+`npm i -g vue-cli`
 
 然后创建一个webpack项目并且下载依赖
 
@@ -136,7 +136,7 @@ var app = new Vue({
     </nav>
     <div class="container">
       <div class="col-sm-3">
-        
+
       </div>
       <div class="col-sm-9">
         <router-view></router-view>
@@ -275,13 +275,13 @@ var app = new Vue({
         <a class="list-group-item" v-for="(plan,index) in plans">
           <div class="row">
             <div class="col-sm-2 user-details">
-            
+
             <--
             `:src`属性，这个是vue的属性绑定简写`v-bind`可以缩写为`:`
              比如a标签的`href`可以写为`:href`
             并且在vue的指令里就一定不要写插值表达式了(`:src={{xx}}`)，vue自己会去解析
             -->
-            
+
               <img :src="plan.avatar" class="avatar img-circle img-responsive" />
               <p class="text-center">
                 <strong>
@@ -411,7 +411,7 @@ export default new Vuex.Store({
 // src/main.js
 import store from './store'
 import TimeEntries from './components/TimeEntries.vue'
-//... 
+//...
 
 const routes = [{
   path : '/',
@@ -582,7 +582,7 @@ export default {
   [types.SAVE_PLAN] (state, plan) {
     // 设置默认值，未来我们可以做登入直接读取昵称和头像
     const avatar = 'https://sfault-avatar.b0.upaiyun.com/147/223/147223148-573297d0913c5_huge256';
-    
+
     state.list.push(
       Object.assign({ name: '二哲', avatar: avatar }, plan)
     )
@@ -692,14 +692,5 @@ var app = new Vue({
 5.路由（子路由）的应用
 
 6.使用 vue-devtools 观察我们的数据
-
----
-
-个人网站 ：http://www.meckodo.com
-
-github地址：https://github.com/MeCKodo/vue-tutorial
-
-> Have a nice day
-
 
 
